@@ -1,0 +1,245 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('star.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Header Styles */
+header {
+    background-color: #191970;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid white;
+    display: inline-block;
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite, glow 2s infinite alternate;
+}
+
+/* Animations */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white;
+    }
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ff69b4, 0 0 10px #ff69b4, 0 0 15px #ff69b4;
+    }
+    100% {
+        text-shadow: 0 0 20px #ff1493, 0 0 30px #ff1493, 0 0 40px #ff1493;
+    }
+}
+
+/* Section Styles */
+section {
+            padding: 10px;
+            margin: 10px;
+        }
+        .education, .hobby, .resume, .about-me, .social-media, .gallery {
+            background-color:#F4F4F4;
+            border-radius: 30px;
+            margin-top: 40px;
+            margin-bottom: 90px;
+        }
+        h2 {
+            color: #333;
+        }
+
+/* About Me Section */
+.about-me {
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .about-me img {
+            margin-top: 10px;
+            max-width: 25%;
+            height: auto;
+        }
+
+/* Button Styles */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.jump-button {
+    padding: 10px 20px;
+    background-color: #fc6fd0;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.jump-button:hover {
+    background-color: #fbcf41;
+}
+
+/* Audio Player Styles */
+.audio-player {
+    display: block;
+    margin: 10px auto;
+    width: 300px;
+    background-color: #f4f4f4;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+
+/* Gallery Styles */
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-images img {
+    width: 30%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-videos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-videos video {
+    width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Countdown Styles */
+.countdown-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.countdown-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff69b4;
+    border-radius: 8px;
+    padding: 10px 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.countdown-box span {
+    font-size: 16px;
+    color: #333;
+}
+
+.countdown-box .value {
+    font-size: 28px;
+    color: #333;
+}
+
+
+/* Social Media */
+.social-media a {
+    text-decoration: none;
+    color: #f3843c;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.instagram-link img, .Tiktok-link img {
+    width: 40px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+/*education*/
+ .education img {
+   width: 170px;
+ height: 170px;
+border: 2px solid #000; /* Adds a border */
+border-radius: 10px; /* Rounded corners */
+ margin: 10px; /* Adds spacing around images */
+            }
+
+ .education h1, .education h2 {
+    margin-bottom: 10px; /* Adds space between headings */
+            }
+
+ .education p {
+ max-width: 500px;
+ text-align: center;
+            }
+
+.education a {
+ text-decoration: none;
+            }
+
+     /* General styling for images */
+        ol img {
+   width: 80%;
+  height: auto;
+  max-width: 300px;  /* Limiting max width */
+ border-radius: 8px;  /* Optional: Adds rounded corners */
+ display: block;  /* Ensure the images are displayed as block elements */
+ margin-top: 10px;
+        }
+
+ /* Container for food items to keep them aligned */
+    ol {
+     list-style-type: decimal;
+       padding-left: 20px;
+        }
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

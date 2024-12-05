@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <h1>☆═━┈˚ ⋆ ˚｡ ⋆୨ 𝒘𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝒎𝒚 𝒘𝒐𝒓𝒍𝒅 ୧⋆ ˚｡┈━═☆</h1>
+</header> 
+
+<!-- Navigation Buttons -->
+<nav class="button-container">
+    <button class="jump-button" onclick="location.href='#about-me'">𝒂𝒃𝒐𝒖𝒕 𝒎𝒆</button>
+    <button class="jump-button" onclick="location.href='#education'">𝒆𝒅𝒖𝒄𝒂𝒕𝒊𝒐𝒏</button>
+    <button class="jump-button" onclick="location.href='#hobby'">𝒉𝒐𝒃𝒃𝒚</button>
+    <button class="jump-button" onclick="location.href='#resume'">𝒓𝒆𝒔𝒖𝒎𝒆</button>
+    <button class="jump-button" onclick="location.href='#gallery'">𝒈𝒂𝒍𝒍𝒆𝒓𝒚</button>
+    <button class="jump-button" onclick="location.href='#social-media'">𝒔𝒐𝒄𝒊𝒂𝒍 𝒎𝒆𝒅𝒊𝒂</button>
+</nav>
+
+<!-- About Me Section -->
+<section class="about-me" id="about-me">
+    <h2>★⋆. 𝓪𝓫𝓸𝓾𝓽 𝓶𝓮 ★⋆. </h2>
+        <img src="aboutme.jpg" alt="About Me Image">
+           <p>I was born in Kuala Lumpur, the vibrant capital city of Malaysia, and spent my early years in Petaling Jaya before our family relocated to Shah Alam when I was in Standard 2. As the middle child among five siblings,
+  I grew up in a loving and supportive household. My parents consistently encouraged us to explore the world, embrace new experiences, and pursue our dreams. I feel truly blessed to be part of a large and close-knit extended family on both sides of my parents,
+ which has always been a source of joy and strength in my life.</p> 
+
+  <h2> ⋆˚ 𝜗𝜚˚⋆ 𝒍𝒊𝒔𝒕𝒆𝒏 𝒕𝒐 𝒎𝒚 𝒇𝒂𝒗𝒐𝒖𝒓𝒊𝒕𝒆 𝒔𝒐𝒏𝒈 ⋆.˚✮🎧✮˚.⋆ </h2>
+                <audio controls class="audio-player">
+        <source src="song.m4a" type="audio/mpeg">
+    </audio> 
+        <p>play with earth ! by wave to earth</p>
+
+        <center><h2> 𝒎𝒚 𝒇𝒂𝒗𝒐𝒖𝒓𝒊𝒕𝒆 𝒇𝒐𝒐𝒅 ฅ^>⩊<^ ฅ </h2>
+        <ol>
+        <li> Ayam Gepuk Top Global (Set A)</li>
+        <br>
+          <a href="https://ayamgepuktopglobal.my/" target="_blank">
+            <img src="gepuk.jpg" alt="ayam"></a>
+            <br>
+
+        <li>Spicy Gochujang Mozzarella Nak Dak Burger</li>
+        <br>
+           <a href="naknak.my" target="_blank">
+            <img src="burger.jpg" alt="burger"> </a>
+<br>
+        <li>Salted Egg Butter Chicken by Jibril</li>
+        <br>
+         <a href="https://jibrilss15.com/" target="_blank">
+            <img src="butter.jpg" alt="butter"> </a>
+
+    </ol></center>
+
+                     <h1>︵‿︵‿୨𝑩𝒊𝒓𝒕𝒉𝒅𝒂𝒚 𝒄𝒐𝒖𝒏𝒕𝒅𝒐𝒘𝒏 🎈୧‿︵‿︵</h1>
+         <img src="cat.gif" alt="cat">
+    <div id="countdown" class="countdown-container"></div>
+</section>
+
+
+<!-- JavaScript for Countdown -->
+<script>
+    const countdownDate = new Date("August 9, 2025 23:59:59").getTime();
+    const countdownElement = document.getElementById("countdown");
+
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = countdownDate - now;
+
+        if (distance < 0) {
+            countdownElement.innerHTML = `<div class="countdown-box">🎉 My Birthday 🎉</div>`;
+            return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        countdownElement.innerHTML = `
+            <div class="countdown-box"><span class="value">${days}</span> Days</div>
+            <div class="countdown-box"><span class="value">${hours}</span> Hours</div>
+            <div class="countdown-box"><span class="value">${minutes}</span> Minutes</div>
+            <div class="countdown-box"><span class="value">${seconds}</span> Seconds</div>
+        `;
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+</script>
+</section>
+
+<section class="education" id="education">
+    <center>
+        <h2>°•. ★ .•°𝓮𝓭𝓾𝓬𝓪𝓽𝓲𝓸𝓷 ★⋆. ࿐࿔</h2>
+         <strong><h1>-----𝑷𝒓𝒆 𝒔𝒄𝒉𝒐𝒐𝒍----</h1></strong>
+        <h2>𝑷𝒂𝒔𝒕𝒊 𝑨𝒔-𝑺𝒊𝒅𝒅𝒊𝒒</h2>
+        <a href="https://g.co/kgs/HD8Yp4A" target="_blank">
+            <img src="pasti.jpg" alt="Pasti">
+        </a>
+        <p>I enrolled in this kindergarten at the age of 4 and continued there until I was 6 years old</p>
+
+        <strong><h1>-----𝑴𝒊𝒅𝒅𝒍𝒆 𝑺𝒄𝒉𝒐𝒐𝒍-----</h1></strong>
+        <h2>𝑺𝒆𝒌𝒐𝒍𝒂𝒉 𝑲𝒆𝒃𝒂𝒏𝒈𝒔𝒂𝒂𝒏 𝑻𝒂𝒎𝒂𝒏 𝑫𝒂𝒕𝒐 𝑯𝒂𝒓𝒖𝒏 1</h2>
+        <a href="https://g.co/kgs/2WtsEN5" target="_blank">
+            <img src="sktdh1.jpg" alt="Sekolah Kebangsaan Taman Dato Harun 1">
+        </a>
+        <p>I enrolled in this school starting from Standard 1 until Standard 2 before my family decided to move to Shah Alam.</p>
+
+        <h2>𝑺𝒆𝒌𝒐𝒍𝒂𝒉 𝑲𝒆𝒃𝒂𝒏𝒈𝒔𝒂𝒂𝒏 𝑩𝒂𝒏𝒅𝒂𝒓 𝑨𝒏𝒈𝒈𝒆𝒓𝒊𝒌</h2>
+        <a href="https://g.co/kgs/kdXvLwM" target="_blank">
+            <img src="skba.jpg" alt="Sekolah Kebangsaan Bandar Anggerik">
+        </a>
+        <p>I enrolled in this school starting from Standard 2 until Standard 6.</p>
+
+        <h2>𝑺𝒆𝒌𝒐𝒍𝒂𝒉 𝑹𝒆𝒏𝒅𝒂𝒉 𝑨𝒈𝒂𝒎𝒂 𝑰𝒏𝒕𝒆𝒈𝒓𝒂𝒔𝒊 𝑨𝒍-𝑯𝒂𝒔𝒂𝒏𝒊𝒂𝒉</h2>
+        <a href="https://g.co/kgs/kbS1pJo" target="_blank">
+            <img src="sra6.jpg" alt="Sekolah Rendah Agama Integrasi Al-Hasaniah">
+        </a>
+        <p>I enrolled in this school, where I learned about Islamic practices that have remained a guiding influence in my life to this day.</p>
+<br>
+        <strong><h1>-----𝑯𝒊𝒈𝒉 𝑺𝒄𝒉𝒐𝒐𝒍-----</h1></strong>
+        <h2>𝑺𝒆𝒌𝒐𝒍𝒂𝒉 𝑴𝒆𝒏𝒆𝒏𝒈𝒂𝒉 𝑲𝒆𝒃𝒂𝒏𝒈𝒔𝒂𝒂𝒏 𝑺𝒆𝒌𝒔𝒚𝒆𝒏 9</h2>
+        <a href="https://g.co/kgs/aW7MEvD" target="_blank">
+            <img src="smks9.jpg" alt="Sekolah Menengah Kebangsaan Seksyen 9">
+        </a>
+        <p>My high school taught me a lot  and showed me how to start my life.</p>
+<br>
+        <strong><h1>-----𝑫𝒊𝒑𝒍𝒐𝒎𝒂-----</h1></strong>
+        <h2>𝑼𝒏𝒊𝒗𝒆𝒓𝒔𝒊𝒕𝒊 𝑻𝒆𝒌𝒏𝒐𝒍𝒐𝒈𝒊 𝑴𝒂𝒓𝒂, 𝑪𝒂𝒘𝒂𝒏𝒈𝒂𝒏 𝑱𝒐𝒉𝒐𝒓, 𝑲𝒂𝒎𝒑𝒖𝒔 𝑺𝒆𝒈𝒂𝒎𝒂𝒕</h2>
+        <a href="https://g.co/kgs/M23SfTD" target="_blank">
+            <img src="uitm.jpg" alt="Universiti Teknologi Mara, Cawangan Johor, Kampus Segamat">
+        </a>
+        <p>The start of my adult journey.</p>
+    </center>
+</section>
+
+<section class="hobby" id="hobby">
+    <center><h2>⭑ ★ ⭑ ˗ ˏˋ𝓱𝓸𝓫𝓫𝓎´ˎ ˗ ⭑ ★ ⭑</h2></center>
+    <table class="hobby-table">
+        <thead>
+            <tr>
+                <th>Hobby</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <style>  
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table th, table td {
+            padding: 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        table th {
+            background-color: #5966b1;
+            color: white;
+        }
+        .about-me {
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .about-me img {
+            margin-top: 10px;
+            max-width: 25%;
+            height: auto;
+        }
+        table td img {
+            display: block;
+            margin: 0 auto;
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        table td p {
+            margin-top: 10px;
+            text-align: center;
+            color: #333;
+            font-size: 14px;
+</style>
+            <!-- Hobby Row 1 -->
+            <tr>
+                <td>Reading</td>
+                <td>
+                    <img src="reading.jpg" alt="Reading">
+                    <p>I discovered my comfort in reading books, a hobby that began when my dad used to buy me plenty of princess-themed books during my childhood. This passion for reading has stayed with me and continues to grow over time.</p>
+                </td>
+            </tr>
+            <!-- Hobby Row 2 -->
+            <tr>
+                <td>Journaling</td>
+                <td>
+                    <img src="journaling.jpg" alt="Journaling">
+                    <p>Journaling allows me to preserve my memories and special moments by filling each page with my personal narrative of the day, creating a meaningful record of my experiences.</p>
+                </td>
+            </tr>
+            <!-- Hobby Row 3 -->
+            <tr>
+                <td>Traveling</td>
+                <td>
+                    <img src="travel.jpg" alt="Traveling">
+                    <p>I have a deep love for exploring new places and immersing myself in diverse cultures. Traveling not only broadens my perspective but also fills my life with unforgettable memories and enriching experiences.</p>
+                </td>
+            </tr>
+            <!-- Hobby Row 4 -->
+            <tr>
+                <td>Collecting Pictures</td>
+                <td>
+                    <img src="polaroid.jpg" alt="Polaroid Pictures">
+                    <p>I always carry my Polaroid camera or print out pictures of special moments I want to preserve, as I find physical photos much more meaningful and memorable compared to storing them digitally.</p>
+                </td>
+            </tr>
+            <!-- Hobby Row 5 -->
+            <tr>
+                <td>Cooking</td>
+                <td>
+                    <img src="cooking.jpg" alt="Cooking">
+                    <p>I find a deep sense of calm and fulfillment when I cook, especially when preparing meals for others. This passion for cooking began with my mom, who lovingly cooked for our family every day at home, inspiring me to carry on that tradition.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section class="resume" id="resume">
+    <h2>˚₊‧꒰𝓻𝓮𝓼𝓾𝓶𝓮꒱ ‧₊˚</h2>
+    <table class="resume-table">
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <style>    .resume {
+        background-color: #f9f9f9;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        margin: 40px auto;
+        max-width: 900px;
+        font-family: Arial, sans-serif;
+    }
+
+    .resume h2 {
+        text-align: center;
+        color: #6a5acd;
+        font-size: 32px;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+    }
+
+    .resume-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    .resume-table thead th {
+        background-color: #6a5acd;
+        color: #fff;
+        font-size: 18px;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .resume-table tbody td {
+        padding: 15px;
+        vertical-align: top;
+        border-bottom: 1px solid #ddd;
+        font-size: 16px;
+        color: #333;
+    }
+
+    .resume-table tbody td:first-child {
+        font-weight: bold;
+        color: #f3843c;
+        width: 25%;
+    }
+
+    .resume-table tbody td:last-child {
+        width: 75%;
+    }
+
+    .resume-table tbody tr:last-child td {
+        border-bottom: none;
+    }
+
+    .resume-table tbody td strong {
+        color: #444;
+    }
+
+    .resume-table tbody td em {
+        color: #555;
+        font-style: italic;
+    }
+</style>
+            <tr>
+                <td>Work Experience</td>
+                <td>
+                    <center>
+                        <strong>Internship</strong><br><br>
+                        <img src="intern.jpg" alt="Intern"><br>
+                        <em>Perpustakaan Tun Abdul Razak, UiTM Shah Alam</em> (July 2024 - September 2024)<br>
+                        - Stationed in 10 different departments.<br>
+                        - Assisted with tasks and attended workshops provided by PTAR Shah Alam.<br><br>
+                        <strong>Food and Beverages Worker</strong><br>
+                        <em>Krispy Kreme</em> (June 2022 - August 2022)<br>
+                        - Provided excellent customer service, addressing inquiries and processing transactions.<br>
+                        - Served nearly 600 customers daily with top-notch service.
+                    </center>
+                </td>
+            </tr>
+            <tr>
+                <td>Education</td>
+                <td>
+                    <center>
+                        <strong>University</strong><br><br>
+                        <img src="class.jpg" alt="University"><br>
+                        <em>Universiti Teknologi Mara (UiTM), Johor Campus, Segamat</em><br>
+                        Diploma in Information Management (2022 - Now)<br><br>
+                        <strong>High School</strong><br><br>
+                        <img src="highschool.jpg" alt="High School"><br>
+                        <em>SMK Seksyen 9, Shah Alam</em><br>
+                        Computer Science Stream (2017 - 2022)
+                    </center>
+                </td>
+            </tr>
+            <tr>
+                <td>Skills</td>
+                <td>
+                    <center>
+                        <strong>Languages</strong><br>
+                        - Bahasa Malaysia (Native)<br>
+                        - English (High Proficiency, MUET Band: 4.5)<br>
+                        - Bahasa Indonesia (Comfortable)<br>
+                        - Korean (Beginner Level)<br><br>
+                        <strong>Coding Languages</strong><br>
+                        - C++ (Intermediate)<br>
+                        - JavaScript (Entry Level)<br>
+                        - Python (Entry Level)<br><br>
+                        <strong>Software</strong><br>
+                        - Microsoft Word, PowerPoint (High Proficiency)<br>
+                        - Microsoft Excel (Intermediate)<br>
+                        - Canva, Capcut (High Proficiency)<br><br>
+                        <strong>Soft Skills</strong><br>
+                        - Good Communication Skills<br>
+                        - Teamwork<br>
+                        - Adaptability to New Environments
+                    </center>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<!-- New Gallery Section -->
+<section class="gallery" id="gallery">
+    <center><h2>˖⁺‧₊˚ ˚₊‧⁺˖𝓰𝓪𝓵𝓵𝓮𝓻𝔂˖⁺‧₊˚ ˚₊‧⁺˖</h2></center>
+   <center> <p>Here are some images from my personal collection</p></center>
+    <div class="gallery-images">
+     <center>   <img src="family.jpg" alt="Image 1">
+        <p>  𝓶𝔂 𝓯𝓪𝓶𝓲𝓵𝔂 𝓻𝓪𝔂𝓪 𝓹𝓲𝓬𝓽𝓾𝓻𝓮  </p>
+        <img src="child1.jpg" alt="Image 2">
+        <p>  𝓶𝔂 𝓫𝓪𝓫𝔂 𝓹𝓱𝓸𝓽𝓸 𝔀𝓲𝓽𝓱 𝓶𝔂 𝓭𝓪𝓭   </p>
+        <img src="child2.jpg" alt="Image 3">
+        <p>   𝓫𝓪𝓫𝔂 𝓶𝓮</p>
+        <img src="family2.jpg" alt="Image 4">
+        <p>  𝓫𝓲𝓻𝓽𝓱𝓭𝓪𝔂 𝓹𝓲𝓬𝓽𝓾𝓻𝓮 𝔀𝓲𝓽𝓱 𝓶𝔂 𝓯𝓪𝓶𝓲𝓵𝔂   </p>
+        <img src="family3.jpg" alt="Image 5">
+        <p>  𝓰𝓪𝓻𝓭𝓮𝓷 𝓹𝓲𝓬𝓽𝓾𝓻𝓮 𝔀𝓲𝓽𝓱 𝓶𝔂 𝓵𝓸𝓿𝓮𝓼 𝓸𝓷𝓮    </p>
+        <img src="friend1.jpg" alt="Image 6">
+        <p>   𝓹𝓲𝓬𝓽𝓾𝓻𝓮 𝔀𝓲𝓽𝓱 𝓶𝔂 𝓱𝓲𝓰𝓱 𝓼𝓬𝓱𝓸𝓸𝓵 𝓰𝓻𝓸𝓾𝓹 </p>
+        <img src="friend2.jpg" alt="Image 7">
+        <p> 𝓹𝓲𝓬𝓽𝓾𝓻𝓮 𝔀𝓲𝓽𝓱 𝓶𝔂 𝓾𝓷𝓲 𝓫𝓮𝓼𝓽𝓲𝓮𝓼 </p>
+        <img src="friend3.jpg" alt="Image 8">
+        <p>  𝓹𝓲𝓬𝓽𝓾𝓻𝓮 𝔀𝓲𝓽𝓱 𝓷𝓪𝓳𝔀𝓪 𝓪𝓷𝓭 𝓻𝓲𝓯𝓱𝓪𝓷𝓲𝓼  </p>
+    
+    <a href="https://www.instagram.com/share/_9TTuaGGd" target="_blank">
+        <img src="me.jpg" alt="Picture in Türkiye" >
+    </a>
+     <p>𝓹𝓲𝓬𝓽𝓾𝓻𝓮 𝓲𝓷 𝓽𝓾𝓻𝓴𝓲𝔂𝓮</p>
+
+
+
+    <a href="https://www.instagram.com/share/_-vH9585X" target="_blank">
+        <img src="me2.jpg" alt="Picture in Korea">
+    </a>
+        <p>𝓹𝓲𝓬𝓽𝓾𝓻𝓮 𝓲𝓷 𝓴𝓸𝓻𝓮𝓪</p>
+
+         <img src="grad.jpg" alt="Image 11">
+        <p>  𝒉𝒊𝒈𝒉 𝒔𝒄𝒉𝒐𝒐𝒍 𝒈𝒓𝒂𝒅𝒖𝒂𝒕𝒊𝒐𝒏  </p> 
+         <img src="film.jpg" alt="Image 12">
+        <p>  𝒑𝒉𝒐𝒕𝒐 𝒃𝒐𝒐𝒕𝒉 𝒑𝒊𝒄𝒕𝒖𝒓𝒆𝒔</p> 
+         </center>
+    </div>
+
+    <center><h2>☆.。.:*・° 𝒗𝒊𝒅𝒆𝒐 ☆.。.:*・°</h2></center>
+    <div class="gallery-videos">
+        <!-- Local Video 1 -->
+       <center> <video controls>
+            <source src="video1.MOV" type="video/mp4">
+        </video>      
+           <!-- Local Video 2 -->
+        <video controls>
+            <source src="video2.mp4" type="video/mp4">
+        </video>
+</center>
+
+</section>
+
+
+<section class="social-media" id="social-media">
+    <center><h2>˖⁺‧₊˚ ˚₊‧⁺˖✮ 𝒔𝒐𝒄𝒊𝒂𝒍 𝒎𝒆𝒅𝒊𝒂 ✮˖⁺‧₊˚ ˚₊‧⁺˖</h2>
+    <p>Stay connected and follow me on social media:</p> </center>   
+    
+        <body> 
+            <center>
+            <a href="https://www.instagram.com/afrinazry/" target="_blank" class="instagram-link">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+            </a>
+            <a href="https://www.tiktok.com/@sherupplimaooo?_t=8rpLEQGWndQ&_r=1" target="_blank" class="instagram-link">
+                <img src="https://static.wikia.nocookie.net/tiktok/images/e/eb/TikTok_Logo.png/revision/latest?cb=20210816124125" alt="tiktok Logo">
+            </a>
+
+        </center>       
+</section>
+
+<footer>
+    <p>&copy; 2024 Afrina Nazry. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
